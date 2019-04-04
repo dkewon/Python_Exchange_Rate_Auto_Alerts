@@ -16,7 +16,7 @@ import pandas as pd
 url = 'https://sg.finance.yahoo.com/currencies'
 html = urlopen(url)
 soup = BeautifulSoup(html, 'html.parser')
-#checking html source for this website.Won value is inside this <span class='value'>. With ".contents", you can get the current exchange rate-1122.00
+
 names=[]
 prices=[]
 counter = 40
@@ -30,18 +30,17 @@ for i in range(40, 404, 14):
 currency=pd.DataFrame({"Names": names, "Prices": prices})
 usd_jpy =currency.iloc[16]['Prices']
 
-#we do not want comma inside the number, so I took out comma and since decimal doesn't make a hunge difference, I also ommitted decimals using [:4]
+
 now_usd = usd_jpy
-#as we are getting the value of won when exchanging for a dollar, timezone will be Asia/Seoul
+
 now_japan = datetime.now(timezone('Asia/Tokyo'))
 
 printYenDollar=""
-#I created a notepad named "usdkor" where I can jot down the exchange rate
+
 with open('C:\\Users\\dkewon\\Documents\\Article\\usdyen.txt', 'r') as yendollar:
     last_usd = yendollar.readline()
     #last_usd = last_usd
-#if the new exchange rate is not same as the one before, it will overwrite on the notepad-saving computer memory
-# the format of content as follows-WON-DOLLAR1,122.00(KOREAN TIME21:44:13 11-30-18)
+
 if now_usd != last_usd:
     with open('C:\\Users\\dkewon\\Documents\\Article\\usdyen.txt', 'w') as yendollar:
         yendollar.write(now_usd)
@@ -51,11 +50,11 @@ import tweepy
 #in order to have access to twitter using pyton, you need to get the following tokens from twitter
 class TwitterAPI:
     def __init__(self):
-        consumer_key = "ShqmvD8kmq5DcZVgoZh0QTiTu"
-        consumer_secret = "BjF8PwktKnsabwOt6W6ZFxVyjgvk1OlstKZOnnyhZwQI0LChFv"
+        consumer_key = ""
+        consumer_secret = ""
         auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
-        access_token = "1068264691699515393-P8Y2bxS4hwRM4Q7n9qHVMDRK9H1W2d"
-        access_token_secret = "85idm4gq5LpA1dWoOUyl0RS15Y0EEBTfzQAd2335n8h5c"
+        access_token = ""
+        access_token_secret = ""
         auth.set_access_token(access_token, access_token_secret)
         self.api = tweepy.API(auth)
 # you can now tweet won-dollar exchange rate on twitter
