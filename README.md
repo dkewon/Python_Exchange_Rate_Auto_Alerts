@@ -17,7 +17,7 @@ My algorithm is programmed to get the exchange rate from yahoo finance (https://
      -This is the presentation file, which was used to demonstrate the notification system between USD-KRW 
 
 
-**Demonstration video is also available on [Youtube](https://pages.github.com/)**
+**Demonstration video is also available on [Youtube](https://www.youtube.com/watch?v=yloR4F8q-xk)**
 
 **The script is also explained on [Medium](https://towardsdatascience.com/how-to-get-twitter-notifications-on-currency-exchange-rate-web-scraping-and-automation-94a7eb240d60)**
 
