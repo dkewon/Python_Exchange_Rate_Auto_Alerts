@@ -2,11 +2,11 @@
 
 ## Objective
 As the world becomes more integrated, we are more connected than ever. More students study abroad and more people travel around the globe. 
-For this reason, I created an automated notification system where you can get a Twitter alert when the exchange rate of designated currency drops or goes up.
-With this algorithm, you will be able to save some travel money.
+For this reason, I created an automated notification system for currency exchange where you can get a Twitter alert when the exchange rate of designated currency drops or goes up.
+With this algorithm, you will be able to save some travel money!
 
 ## How it works
-My algorithm is programmed to get the exchange rate from yahoo finance (https://finance.yahoo.com/) and automatically share it on Twitter. It is scheduled to refresh every 5 hours. 
+My algorithm is programmed to get the exchange rate from yahoo finance (https://finance.yahoo.com/) every 5 hours. This information is automatically shared with the users on Twitter.  
 
 ## Files 
 - 04052019_USD_JPY_ExchangeRate_Article.py
