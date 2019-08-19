@@ -10,11 +10,11 @@ My algorithm is programmed to get the exchange rate from yahoo finance (https://
 
 ## Files 
 - 04052019_USD_JPY_ExchangeRate_Article.py
-  -It is the python script for USD-JPY currency exchange
+     -It is the python script for USD-JPY currency exchange
 - IND_Project_12062018_Deborah_Kewon.py
-  -It is the python script for USD-KRW currency exchange
+     -It is the python script for USD-KRW currency exchange
 - Python Presentation (1).pptx
-  -This is the presentation file, which was used to demonstrate the notification system between USD-KRW 
+     -This is the presentation file, which was used to demonstrate the notification system between USD-KRW 
 
 
 **Demonstration video is also available on [Youtube](https://pages.github.com/)**
