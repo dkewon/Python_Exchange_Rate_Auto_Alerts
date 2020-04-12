@@ -37,11 +37,11 @@ import tweepy
 #in order to have access to twitter using pyton, you need to get the following tokens from twitter
 class TwitterAPI:
     def __init__(self):
-        consumer_key = "your key"
-        consumer_secret = "your consumer secret"
+        consumer_key = ""
+        consumer_secret = ""
         auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
-        access_token = "your access token"
-        access_token_secret = "your access token secret"
+        access_token = ""
+        access_token_secret = ""
         auth.set_access_token(access_token, access_token_secret)
         self.api = tweepy.API(auth)
 # you can now tweet won-dollar exchange rate on twitter
